@@ -9,7 +9,7 @@ Your users should:
 ## Link 
 
 Solution URL: [https://github.com/Akshatasarawgi/Four-Card-Feature-Section]
-Live Site URL: 
+Live Site URL: [https://fourcardsect.netlify.app]
 
 ## Built with
 
