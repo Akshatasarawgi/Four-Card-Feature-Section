@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root { 
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --grey-500: hsl(234, 12%, 34%);
+    --grey-400: hsl(212, 6%, 44%);
+    --white: hsl(0, 0%, 100%);
+    --font-family: Poppins, sans-serif;
+    --font-size: 15px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-family: var(--font-family);
+}
+
+.container {
+    margin: 2%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    margin: 2% auto;
+}
+
+.head {
+    font-weight: 100;
+    font-size: 2rem;
+    color: var(--grey-500);
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--grey-500);
+}
+
+.header p {
+    color: var(--grey-500);
+    width: 60%;
+    margin: 1% auto;
+}
+
+.grid {
+    display: grid;
+    margin: 1% auto;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 10%);
+    row-gap: 2.5rem;
+    column-gap: 1rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 230px;
+    border-radius: 10px;
+    padding: 4% 6%;
+    box-shadow: 1px 1px 10px 0.1px var(--grey-400);
+}
+
+.grid img {
+    margin: 2% 3%;
+    padding-top: 5%;
+    padding-left: 70%;
+    height: 5rem;
+}
+
+.box h1 {
+    color: var(--grey-500);
+    font-size: 1.25rem;
+}
+
+.box p {
+    margin-top: 4%; 
+    color: var(--grey-400);
+    font-size: var(--font-size);
+}
+
+.box-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    border-top: 4px solid var(--cyan);
+}
+
+.box-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-top: 4px solid var(--red);
+}
+
+.box-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+   border-top: 4px solid var(--orange);
+}
+
+.box-4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+   border-top: 4px solid var(--blue);
+}
+
+@media (max-width: 1125px) {
+
+    .container {
+        margin: 1% auto;
+        padding: 4%;
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 4%;
+    }
+
+    .box {
+        width: 100%;
+        padding: 3%;
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .header p {
+         width: 90%;
+         margin: 1% auto;
+}
+}
